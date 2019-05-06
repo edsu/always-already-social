@@ -12,6 +12,16 @@
     <link rel="stylesheet" href="css/reveal.css">
     <link rel="stylesheet" href="css/theme/white.css" id="theme">
     <link rel="stylesheet" href="lib/css/zenburn.css">
+    <script>
+      var link = document.createElement( 'link' );
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+      document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
     <style>
       a {
         text-decoration: none;
@@ -27,22 +37,8 @@
         font-size: 14pt;
         vertical-align: super;
       }
-      
-      code {
-        font-family: courier;
-      }
-
     </style>
-    <script>
-      var link = document.createElement( 'link' );
-      link.rel = 'stylesheet';
-      link.type = 'text/css';
-      link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-      document.getElementsByTagName( 'head' )[0].appendChild( link );
-    </script>
-    <!--[if lt IE 9]>
-    <script src="lib/js/html5shiv.js"></script>
-    <![endif]-->
+
   </head>
 
   <body>
@@ -72,10 +68,20 @@
           </p>
         </section>
 
+        <section data-background-image="images/docnow-website.png">
+          <aside class="notes">
+            Fairly non-controversial point that archives have always archives social media.
+          </aside>
+        </section>
+
+        <section>
+          <a href="https://www.docnow.io"><img width="70%" src="images/docnow-team.png"></a>
+        </section>
+
         <section>
           <h2>Overview</h2>
           <hr>
-          <ol>
+          <ol type="I">
             <li class="fragment">Ferguson, MO</li>
             <li class="fragment">Documenting the Now</li>
             <li class="fragment">#1o</li>
@@ -86,13 +92,9 @@
         </section>
 
         <section>
-          team pic
-        </section>
-
-        <section>
 
           <section>
-            <h1>1.</h1>
+            <h1>I.</h1>
             <h2>Ferguson, MO</h2>
           </section>
 
@@ -101,7 +103,12 @@
           </section>
 
           <section>
-            michael brown memorial
+            <figure>
+              <img src="images/memorial.jpg">
+              <figcaption>
+                <a href="https://www.vox.com/2014/11/24/7087825/darren-wilson-not-indicted-michael-brown-ferguson"></a>Michael Brown Memorial</a> by Scott Olson
+              </figcaption>
+            </figure>
           </section>
 
           <section>
@@ -123,25 +130,31 @@
           </section>
 
           <section>
-            French Vines
+            <figure>
+            <a href="https://twitter.com/AntonioFrench/status/498300832648273920">
+              <img width="40%" style="border: thin solid #ccc;" src="images/french-vine.png">
+            </a>
+            <figcaption>
+              <a href="https://twitter.com/search?q=from%3AAntonioFrench%20since%3A2014-08-10%20until%3A2014-08-11%20vine&src=typd">Antonio French's Vine</a>
+            </figcaption>
+            </figure>
           </section>
 
           <section>
-            Bassem Masri
-          </section>
 
-          <section>
-            twarc
           </section>
 
           <section data-background-color="black">
-            <code style="color: #00ff00; font-size: larger;">
+            <code id="code" style="color: #00ff00; font-family: monospace;">
             % twarc search ferguson &gt; tweets.json
             </code>
           </section>
+
+          <section data-background="images/api.png">
+          </section>
     
-          <section>
-           <code style="color: #00ff00; font-size: larger;">
+          <section data-background-color="black">
+           <code style="color: #00ff00; font-family: monospace;">
                 % twarc filter ferguson &gt; stream.json
             </code>
           </section>
@@ -161,35 +174,41 @@
 
         <section>
           <section>
-            <h1>2.</h1>
+            <h1>II.</h1>
             <h2>Documenting the Now</h2>
           </section>
         </section>
 
         <section>
           <section>
-            <h1>3.</h1>
+            <h1>III.</h1>
             <h2>#1o</h2>
           </section>
         </section>
 
         <section>
           <section>
-            <h1>4.</h1>
+            <h1>IV.</h1>
             <h2>Consent</h2>
+          </section>
+          <section>
+            Twitter trash fire / not representative / this is not the point
+          </section>
+          <section>
+            You own your content.
           </section>
         </section>
 
         <section>
           <section>
-            <h1>5.</h1>
+            <h1>V.</h1>
             <h2>DocNow</h2>
           </section>
         </section>
 
         <section>
           <section>
-            <h1>6.</h1>
+            <h1>VI.</h1>
             <h2>Close</h2>
           </section>
         </section>
