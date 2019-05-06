@@ -27,6 +27,11 @@
         font-size: 14pt;
         vertical-align: super;
       }
+      
+      code {
+        font-family: courier;
+      }
+
     </style>
     <script>
       var link = document.createElement( 'link' );
@@ -50,15 +55,143 @@
         <section class="title">
           <div>
             <h2><em>Always Already Social</em></h2>
-            <h4>Issues and Opportunities<br>in Archiving Social Media</h4>
+            <h4>Issues and Opportunities<br>for Archiving Social Media</h4>
+          </div>
           <br>
           <p style="font-size: smaller;">
             Ed Summers<br>
             edsu@umd.edu<br>
+            <a href="https://twitter.com/edsu">@edsu</a>
             <br>
-            <a href="http://mith.umd.edu"><img style="border: thin inset #ccc;" src="images/mith.png"></a>
-            <a href="https://www.docnow.io"><img src="images/docnow.png"></a>
+            <br>
+            <div style="vertical-align: middle">
+            <a href="http://mith.umd.edu"><img height=100 src="images/mith.png"></a>
+            &nbsp;&nbsp;
+            <a href="https://www.docnow.io"><img height="100" src="images/docnow.png"></a>
+            </div>
           </p>
+        </section>
+
+        <section>
+          <h2>Overview</h2>
+          <hr>
+          <ol>
+            <li class="fragment">Ferguson, MO</li>
+            <li class="fragment">Documenting the Now</li>
+            <li class="fragment">#1o</li>
+            <li class="fragment">Designing for Consent</li>
+            <li class="fragment">DocNow</li>
+            <li class="fragment">Conclusion</li>
+          </ol>
+        </section>
+
+        <section>
+          team pic
+        </section>
+
+        <section>
+
+          <section>
+            <h1>1.</h1>
+            <h2>Ferguson, MO</h2>
+          </section>
+
+          <section>
+            <video controls src="videos/ferguson.mp4"></video>
+          </section>
+
+          <section>
+            michael brown memorial
+          </section>
+
+          <section>
+            <figure>
+              <a href="https://www.flickr.com/photos/jbouie/14929714582"><img src="images/hands-up.jpg"></a>
+              <figcaption>
+                <a href="https://www.flickr.com/photos/jbouie/14929714582/">"hands up"</a> by Jamelle Bouie
+              </figcaption>
+            </figure>
+          </section>
+
+          <section>
+            <figure>
+              <a href="https://www.flickr.com/photos/jbouie/14743480937"><img src="images/swat-team.jpg"></a>
+              <figcaption>
+                <a href="https://www.flickr.com/photos/jbouie/14743480937">swat team, fully assembled</a> by Jamelle Bouie
+              </figcaption>
+            </figure>
+          </section>
+
+          <section>
+            French Vines
+          </section>
+
+          <section>
+            Bassem Masri
+          </section>
+
+          <section>
+            twarc
+          </section>
+
+          <section data-background-color="black">
+            <code style="color: #00ff00; font-size: larger;">
+            % twarc search ferguson &gt; tweets.json
+            </code>
+          </section>
+    
+          <section>
+           <code style="color: #00ff00; font-size: larger;">
+                % twarc filter ferguson &gt; stream.json
+            </code>
+          </section>
+
+          <section>
+            <figure>
+              <a href="http://timemapper.okfnlabs.org/edsu/blacklivesmatter">
+                <video controls src="videos/blm-tweets.mp4"></video>
+              </a>
+              <figcaption>
+                  <a href="http://timemapper.okfnlabs.org/edsu/blacklivesmatter">BlackLivesMatter Twitter Collection</a>
+              </figcaption>
+            </figure>
+          </section>
+
+        </section>
+
+        <section>
+          <section>
+            <h1>2.</h1>
+            <h2>Documenting the Now</h2>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h1>3.</h1>
+            <h2>#1o</h2>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h1>4.</h1>
+            <h2>Consent</h2>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h1>5.</h1>
+            <h2>DocNow</h2>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h1>6.</h1>
+            <h2>Close</h2>
+          </section>
         </section>
 
       </div>
@@ -73,7 +206,7 @@
       // Full list of configuration options available at:
       // https://github.com/hakimel/reveal.js#configuration
       Reveal.initialize({
-        controls: false,
+        controls: true,
         progress: false,
         history: true,
         center: true,
