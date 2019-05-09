@@ -51,7 +51,7 @@
         <section class="title">
           <div>
             <h2><em>Always Already Social</em></h2>
-            <h4>Issues and Opportunities<br>for Archiving Social Media</h4>
+            <h4>Social Media in Archives</h4>
           </div>
           <br>
           <p style="font-size: smaller;">
@@ -72,6 +72,7 @@
           <img width="80%" src="images/docnow-website.png">
           <aside class="notes">
             Fairly non-controversial point that archives have always archives social media.
+            Going to take a deep dive into two case studies, and then draw out some issues that need addressing.
           </aside>
         </section>
 
@@ -80,16 +81,12 @@
         </section>
 
         <section>
-          <h2>Overview</h2>
-          <hr>
-          <ol type="I">
-            <li class="fragment">Ferguson, MO</li>
-            <li class="fragment">Documenting the Now</li>
-            <li class="fragment">#1o</li>
-            <li class="fragment">Designing for Consent</li>
-            <li class="fragment">Demo!</li>
-            <li class="fragment">Conclusion</li>
-          </ol>
+          <div style="padding-left: 15%; padding-right: 15%; text-align: left;">
+            <h2 class="fragment">I. Ferguson, MO</h2>
+            <h2 class="fragment">II. Documenting the Now</h2>
+            <h2 class="fragment">III. #1o</h2>
+            <h2 class="fragment">IV. Challenges</h2>
+          </div>
         </section>
 
         <section>
@@ -136,7 +133,7 @@
               <img width="40%" style="border: thin solid #ccc;" src="images/french-vine.png">
             </a>
             <figcaption>
-              <a href="https://twitter.com/search?q=from%3AAntonioFrench%20since%3A2014-08-10%20until%3A2014-08-11%20vine&src=typd">Antonio French's Vine</a>
+              <a href="https://twitter.com/search?q=from%3AAntonioFrench%20since%3A2014-08-10%20until%3A2014-08-11%20vine&src=typd">Antonio French - Vine</a>
             </figcaption>
             </figure>
           </section>
@@ -152,6 +149,7 @@
           <section>
             <img src="images/api.png">
             <aside class="notes">
+              The unusual and unlikely open API. This level of access is increasingly limited.
               The need to work within 7 day window.
             </aside>
           </section>
@@ -218,56 +216,100 @@
           </section>
 
           <section>
-            partners + mellon
+            <blockquote style="text-align: left;">
+                Critical Race Theory techniques of evidential rectifying could be useful 
+                to archival discourse in terms of broadening notions of what constitutes 
+                a record, the role of human subjects documented as co-creators of the 
+                record, and assumptions about archives and archivists as neutral third 
+                parties in the preservation and use of the record and other forms of 
+                historical evidence.<br>
+                <br>
+                – <a href="https://link.springer.com/article/10.1007/s10502-006-9022-6">Anthony Dunbar (2006)</a>
+            </blockquote>
           </section>
 
           <section>
-            advisory board
+            <figure>
+            <a href="https://news.docnow.io/introducing-documenting-the-now-416874c07e0"><img src="images/docnow-advisory-board.png"></a>
+            <figcaption>
+              <a href="https://news.docnow.io/introducing-documenting-the-now-416874c07e0"></a>Documenting the Now Advisory Board (2016)</a>
+            </figcaption>
+
           </section>
 
           <section>
-            * improve tools
-            * improve data sharing practices
+            <ol>
+              <li>Build <em>tools</em> that help archivists assemble archival collections using social media.</li>
+              <li>Develop a community of <em>practice</em> around the ethics of archiving social media.</li>
+            </ol>
           </section>
 
           <section>
-            internet archive collaboration: url extraction
+            <figure>
+              <a href="https://www.docnow.io/meetings/stl-2017/"><img src="images/ferguson-meeting.png"></a>
+              <figcaption>
+                Ferguson, 2017
+              </figcaption>
+            </figure>
           </section>
 
           <section>
-            existing tools for extraction
+            <figure>
+              <a href="https://www.baltimoresun.com/news/maryland/investigations/bs-md-geofeedia-police-20160902-story.html"><img style="border: thin solid black; padding-bottom: 30px;" src="images/geofeedia.png"></a>
+              <figcaption>
+                <a href="https://www.baltimoresun.com/news/maryland/investigations/bs-md-geofeedia-police-20160902-story.html">Alison Knezevich (2016)</a>
+              </figcaption>
+            </figure>
           </section>
 
           <section>
-            people doing data extraction: defense contractor letter
+            <a href="https://developer.twitter.com/en/developer-terms/policy"><img style="border: thin solid black;" src="images/tos.png"></a>
           </section>
 
           <section>
-            concern about rights: workshops in ferguson
+            <figure>
+            <a href="https://www.docnow.io/catalog/"><img style="border: thin solid #ccc;" src="images/catalog.png"></a>
+            <figcaption><a href="https:///www.docnow.io/catalog/">Documenting the Now Catalog</a></figcaption>
+            <aside class="notes">catalog: deen freelon</aside>
+            </figure>
           </section>
 
           <section>
-            twitter's tos
+            <figure>
+            <a href="https://github.com/docnow/hydrator#readme"><img src="images/hydrator.png"></a>
+            <figcaption><a href="https://github.com/docnow/hydrator">Hydrator App</a></figcaption>
+            </figure>
+          </section>
+
+ 
+          <section data-background-color="black">
+              <code id="code" style="color: #00ff00; font-size: 26pt; font-family: monospace;">
+              % twarc filter ferguson &gt; tweets.json
+              </code>
+          </section>
+
+          <section data-background-color="black">
+              <code id="code" style="color: #00ff00; font-size: 26pt; font-family: monospace;">
+              % twarc hydrate tweet-ids.csv &gt; tweets.json
+              </code>
           </section>
 
           <section>
-            catalog: deen freelon
+            <figure>
+              <a href="https://github.com/docnow/unshrtn"><img style="border: thin solid ;" src="images/unshrtn.png"></a>
+            </figure>
           </section>
 
           <section>
-            hydrator
+            <a href="https://github.com/docnow/diffengine"><img src="images/diffengine.png"></a>
+          </section>
+
+          <section data-background-color="black">
+            <a href="https://twitter.com/whitehouse_diff/status/829171564809768960"><img src="images/diffengine-tweet.png"></a>
           </section>
 
           <section>
-            twarc
-          </section>
-
-          <section>
-            diffengine
-          </section>
-
-          <section>
-            docnow app
+            <img src="images/docnow-app.png">
           </section>
 
         </section>
@@ -277,6 +319,9 @@
           <section>
             <h1>III.</h1>
             <h2>#1o</h2>
+          </section>
+
+          <section>
             <img height="400" src="images/ballot.png">
           </section>
 
@@ -286,7 +331,6 @@
               Vicenc contacted me via email Sept 2017.
             </aside>
           </section>
-
 
           <section>
             <a href="https://twitter.com/AdaColau/status/898491031125151744"><img width="60%" style="border: thin solid #ccc;" src="images/no-tinc-por.png"></a>
@@ -350,9 +394,6 @@
           </section>
 
           <section>
-          </section>
-
-          <section>
               <iframe width="800" height="515" src="https://www.youtube.com/embed/4P5xSntVWQE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </section>
 
@@ -389,54 +430,94 @@
           </section>
 
           <section>
-            twitter videos
+            <a href="https://twitter.com/ClaraVera14/status/914400109152096256"><img width="50%" style="padding-bottom: 20px; border: thin solid black;" src="images/twitter-video-01.png"></a>
           </section>
 
           <section>
-            Analyzed first 1 million tweets using <a href="https://github.com/DocNow/twarc/blob/master/utils/youtubedl.py">youtube-dl</a>
-            <ul>
-              <li>4,012 unique videos</li>
-              <li>45 video providers</li>
-              <li>772,602 seconds ; 214 hours</li>
-            </ul>
+            <a href="https://twitter.com/gabrielrufian/status/914500906934325248"><img width="50%" style="padding-bottom: 20px; border: thin solid black;" src="images/twitter-video-02.png"></a>
+          </section>
 
+          <section>
+            <a href="https://twitter.com/CarmeCRS/status/914412235061186560"><img width="50%" style="padding-bottom: 20px; border: thin solid black;" src="images/twitter-video-03.png"></a>
+          </section>
+
+          <section>
+            Analyzed first 1 million tweets using <a href="https://github.com/DocNow/twarc/blob/master/utils/youtubedl.py">youtube-dl</a>:
+            <br>
+            <br>
+            <ul>
+              <li class="fragment">4,012 unique videos</li>
+              <li class="fragment">45 video providers</li>
+              <li class="fragment">772,602 seconds
+              <li class="fragment">214 hours</li>
+            </ul>
+          </section>
+
+          <section>
+            <img width="80%" src="images/disk.jpg">
           </section>
 
         </section>
 
         <section>
-          j
+
           <section>
             <h1>IV.</h1>
-            <h2>Appraisal &amp; Consent</h2>
+            <h2>Challenges</h2>
           </section>
 
           <section>
-            Twitter trash fire / not representative / this is not the point
+            <figure>
+              <video controls muted src="videos/garbage-fire.mp4"></video>
+              <figcaption>
+                  <a href="https://www.youtube.com/watch?v=IOJejp76FH4">Garbage Fire in The 818</a> by Mykill Ray
+              </figcaption>
+            </figure>
+          </section>
+
+          <section data-background="images/unite-the-right.png">
+            <aside class="notes">
+              unite the right: visualization of deleted accounts
+              how do we document these interventions?
+            </aside>
           </section>
 
           <section>
-            Booms quote.
+            proportion of video from rt
           </section>
 
           <section>
-            You own your content.
+            <blockquote style="text-align: left;">
+                An archival judgement made some time after the documents' creation ought to consider contemporary opinion important and significant. The documentary heritage should be formed according to an archival conception, historically assessed, which reflects the consciousness of the particular period for which the archives is responsible and from which the source material to be appraised is taken.
+                <br><br>
+                <a href="https://archivaria.ca/index.php/archivaria/issue/view/383">Hans Booms (1972)</a>
+            </blockquote>
           </section>
 
-        </section>
-
-        <section>
           <section>
-            <h1>V.</h1>
-            <h2>DocNow</h2>
+            <figure>
+            <a href="https://twitter.com/en/tos#update-Chapter3"><img style="border: thin solid #ccc;" src="images/you-own-your-content.png"></a>
+            <figcaption>
+              <a href="https://twitter.com/en/tos#update-Chapter3">Twitter Terms of Service, 2019</a>
+            </figcaption>
+            </figure>
           </section>
-        </section>
 
-        <section>
           <section>
-            <h1>VI.</h1>
-            <h2>Close</h2>
+            <h2>Consent is broken on the Web</h2>
+            <hr>
+            <ul>
+              <li>Individuals are not able to read all the policies they are exposed to every day.</li>
+              <li>Policies are very difficult to write clearly and completely so that people can understand them.</li>
+              <li>Even if people can read the policies, it is very difficult (if not impossible ) to predict all the ways your data could be used.</li>
+            </ul>
+            <br>
+            <br>
+            <div style="text-align: left;"
+            <a href="https://harvardlawreview.org/2013/05/introduction-privacy-self-management-and-the-consent-dilemma/">DJ Solove (2013)</a>
+            </div>
           </section>
+
         </section>
 
       </div>
